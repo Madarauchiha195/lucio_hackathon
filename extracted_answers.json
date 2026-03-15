@@ -1,0 +1,32 @@
+[
+  {
+    "question_id": 1,
+    "answer": "Tata Sons Private Limited (through Talace Private Limited)",
+    "document": "1022 - Air India _ Tata SIA.pdf",
+    "page": 3
+  },
+  {
+    "question_id": 2,
+    "answer": "Mark Zuckerberg",
+    "document": "META-Q3-2024-Earnings-Call-Transcript.pdf",
+    "page": 1
+  },
+  {
+    "question_id": 3,
+    "answer": "The aftermarkets (service and parts) for Kodak's equipment.",
+    "document": "Eastman Kodak Co. v. Image Technical Services, Inc., 504 U.S. 451 (1992) .pdf",
+    "page": 19
+  },
+  {
+    "question_id": 4,
+    "answer": "The main issue is whether the vertical aspects of the Brown-Kinney merger violate Section 7 of the Clayton Act due to its anticompetitive effects on competition among manufacturers and retailers.",
+    "document": "Brown Shoe Co., Inc. v. United States, 370 U.S. 294 (1962) .pdf",
+    "page": 79
+  },
+  {
+    "question_id": 5,
+    "answer": "Not Found",
+    "document": "Not Found",
+    "page": 0
+  }
+]
