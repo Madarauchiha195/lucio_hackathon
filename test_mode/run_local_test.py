@@ -34,11 +34,21 @@ from qa.gemini_answer import answer_all_questions
 # Override this list with your actual test questions.
 
 SAMPLE_QUESTIONS = [
-    {"id": 1, "question": "What is the name of the Acquirer in the Air India and Tata SIA combination?"},
-    {"id": 2, "question": "Who is the CEO of Meta speaking in the earnings call?"},
-    {"id": 3, "question": "What product or market is the central focus in the Eastman Kodak Co. case?"},
-    {"id": 4, "question": "What is the main issue in the Brown Shoe Co. v. United States case?"},
-    {"id": 5, "question": "What is the date of the Exxon Mobil Corporation annual meeting in the 2024 DEF 14A proxy statement?"},
+    {"id": 1, "question": "What is the main alternative to SUMO for academic research and how is it different?"},
+    {"id": 2, "question": "Which location has the highest value in the Banking Transactions dataset?"},
+    {"id": 3, "question": "Where and when was the KMIL Amendment executed?"},
+    {"id": 4, "question": "In the Satyam College of Engineering, what is the subject taught on wednesdays between 10:20 and 11:10?"},
+    {"id": 5, "question": "What was EBCs annual revenues form operations in the years from 2018-2021"},
+    {"id": 6, "question": "Who are the book running leads for the Hyundai IPO?"},
+    {"id": 7, "question": "Compare the aggregated amount raised by Mitsu Chem Plast, DeltaTech Gaming Ltd, First Meridian"},
+    {"id": 8, "question": "Which sections of the Income Tax Act deal with taxation of prize money from online gaming and horse racing?"},
+    {"id": 9, "question": "How many sexual harassment complaints were filed in the 22-23 FY in Paytm?"},
+    {"id": 10, "question": "What is the Cravath Scale salary for attorneys from the class of 2018?"},
+    {"id": 11, "question": "In the Cherabuddi Educational Society SLP, how many annexures are attached?"},
+    {"id": 12, "question": "For Bikaji SSA, what is the stamp duty?"},
+    {"id": 13, "question": "What is the stamp duty for DTD-29-03-2025-Final.pdf"},
+    {"id": 14, "question": "When was Suzlon Energy Incorporated?"},
+    {"id": 15, "question": "Who is the investigating officer assigned for the case in CHALAN--FIR NO-483-14 U-S-420,406-merged.pdf and what is his rank?"},
 ]
 
 
@@ -47,7 +57,7 @@ SAMPLE_QUESTIONS = [
 def run_local_test(
     docs_folder: str | None = None,
     questions: list[dict] | None = None,
-    max_docs: int = 20,
+    max_docs: int = 200,
 ) -> list[dict]:
     """
     Run the full pipeline locally.
@@ -56,7 +66,7 @@ def run_local_test(
     ----------
     docs_folder : path to folder containing PDF files (defaults to LOCAL_TEST_DOCS)
     questions   : list of {id, question} dicts (defaults to SAMPLE_QUESTIONS)
-    max_docs    : maximum number of PDFs to use (default 20)
+    max_docs    : maximum number of PDFs to use (default 200)
 
     Returns
     -------
@@ -108,8 +118,8 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--max-docs", "-n",
-        type=int, default=20,
-        help="Maximum number of PDFs to use (default: 20)",
+        type=int, default=200,
+        help="Maximum number of PDFs to use (default: 200)",
     )
     args = parser.parse_args()
 

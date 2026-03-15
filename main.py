@@ -37,9 +37,9 @@ def _import_all():
     global answer_all_questions
     global submit_answers
 
-    from api.register      import register_team
-    from api.download_docs import fetch_doc_list, download_documents
-    from api.submit        import submit_answers
+    # from api.register      import register_team
+    # from api.download_docs import fetch_doc_list, download_documents  # requires aiohttp
+    # from api.submit        import submit_answers
     from ingestion.parser  import parse_documents
     from index.bm25_index  import build_index
     from qa.gemini_answer   import answer_all_questions

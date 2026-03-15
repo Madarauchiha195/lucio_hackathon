@@ -1,0 +1,8 @@
+.env
+.env.local
+__pycache__/
+*.pyc
+data/
+test_mode/sample_docs/
+out.txt
+extracted_answers.json

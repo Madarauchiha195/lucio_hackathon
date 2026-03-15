@@ -7,7 +7,10 @@ import os
 from dotenv import load_dotenv
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-load_dotenv(os.path.join(BASE_DIR, ".env"))
+env_path = os.path.join(BASE_DIR, ".env.local")
+if not os.path.exists(env_path):
+    env_path = os.path.join(BASE_DIR, ".env")
+load_dotenv(env_path)
 
 # ─── API ──────────────────────────────────────────────────────────────────────
 API_BASE_URL = os.getenv("HACKATHON_API_URL", "https://hackathon.lucio.ai")  # override via env
